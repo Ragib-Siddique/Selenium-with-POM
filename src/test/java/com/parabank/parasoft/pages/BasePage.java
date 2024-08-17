@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+                                                                                    //DDT=Data Driven Test//
 import java.util.List;
 
 public class BasePage extends Page {
