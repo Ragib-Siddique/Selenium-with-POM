@@ -13,31 +13,29 @@ import org.testng.annotations.BeforeMethod;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.Properties;
 
 public class BaseTest {
     WebDriver driver;
     Page page;
 
-    //this is the way to LOAD PROPERTIES file//
     private Properties properties;
 
     public BaseTest() {
 
         try {
 
-            properties = new Properties();
-            String filePath = System.getProperty("user.dir") + "src/test/resources/config.properties";
-            FileInputStream inputStream = new FileInputStream(filePath);
+            properties=new Properties();
+           String filePath= System.getProperty("user.dir")+"src/test/resources/config.properties";
 
-            properties.load(inputStream);
+            FileInputStream fileInputStream=new FileInputStream(filePath);
+                properties.load(fileInputStream);
 
 
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {
-            throw new RuntimeException(e);
+        throw new RuntimeException(e);
         }
     }
 
@@ -48,6 +46,7 @@ public class BaseTest {
 
     String browserName = properties.getProperty("browserName");
     switch  (browserName) {
+
         case "firefox":
             driver = new FirefoxDriver();
             break;
