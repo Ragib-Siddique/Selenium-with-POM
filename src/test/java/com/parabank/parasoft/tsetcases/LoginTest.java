@@ -17,7 +17,7 @@ public class LoginTest extends BaseTest {
 
         loginPage=loginPage
                 .fillUsername("adadadad")
-                .cliclLoginLinkBtn();
+                .clicklLoginLinkBtn();
 
         Assert.assertTrue(loginPage.hasError());
     }
@@ -33,7 +33,7 @@ public class LoginTest extends BaseTest {
 
         loginPage=loginPage
                 .fillUPassword("123dadadad")
-                .cliclLoginLinkBtn();
+                .clicklLoginLinkBtn();
 
         Assert.assertTrue(loginPage.hasError());
     }
@@ -46,7 +46,7 @@ public class LoginTest extends BaseTest {
         LoginPage loginPage=page.getInstance(LoginPage.class);
 
         loginPage=loginPage
-                .cliclLoginLinkBtn();
+                .clicklLoginLinkBtn();
 
         Assert.assertTrue(loginPage.hasError());
     }

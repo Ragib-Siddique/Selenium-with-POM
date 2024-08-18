@@ -27,7 +27,7 @@ public class LoginPage extends BasePage{
 
     }
 
-    public LoginPage cliclLoginLinkBtn(){
+    public LoginPage clicklLoginLinkBtn(){
         getWebElement(By.cssSelector("input[value='Log In']")).click();
         return this;
     }

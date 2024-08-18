@@ -9,7 +9,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -24,14 +23,11 @@ public class BaseTest {
     public BaseTest() {
 
         try {
+        properties=new Properties();
+        String filePath= System.getProperty("user.dir")+"src/test/resources/config.properties";
 
-            properties=new Properties();
-           String filePath= System.getProperty("user.dir")+"src/test/resources/config.properties";
-
-            FileInputStream fileInputStream=new FileInputStream(filePath);
-                properties.load(fileInputStream);
-
-
+        FileInputStream fileInputStream=new FileInputStream(filePath);
+        properties.load(fileInputStream);
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {
@@ -81,8 +77,6 @@ public class BaseTest {
     page=new BasePage(driver);
 
     }
-
-
 
 
     @AfterMethod
