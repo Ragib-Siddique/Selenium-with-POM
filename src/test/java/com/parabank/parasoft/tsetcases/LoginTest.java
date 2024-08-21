@@ -57,8 +57,8 @@ public class LoginTest extends BaseTest {
         LoginPage loginPage=page.getInstance(LoginPage.class);
 
         AccountOverviewPage overviewPage=loginPage
-                .fillUsername("rgb")
-                .fillUPassword("rgb2789")
+                .fillUsername(getUsername())
+                .fillUPassword(getPassword())
                 .clickLoginBtn();
 
         Assert.assertTrue(overviewPage.hasLogoutLink());

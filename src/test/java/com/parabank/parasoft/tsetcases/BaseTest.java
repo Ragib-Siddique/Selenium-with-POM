@@ -24,7 +24,7 @@ public class BaseTest {
 
         try {
         properties=new Properties();
-        String filePath= System.getProperty("user.dir")+"src/test/resources/config.properties";
+        String filePath= System.getProperty("user.dir")+"/src/test/resources/config.properties";
 
         FileInputStream fileInputStream=new FileInputStream(filePath);
         properties.load(fileInputStream);
