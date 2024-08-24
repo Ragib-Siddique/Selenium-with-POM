@@ -30,7 +30,7 @@ public class OpenNewAccountPage extends BasePage {
 
 
    public boolean hasAccountId(){
-        return getWebElements(By.id("newAccountId")).size() >0;
+        return getWebElements(By.cssSelector("#newAccountId")).size()>0;
    }
 
 
