@@ -1,9 +1,7 @@
-package com.parabank.parasoft.tsetcases;
+package com.parabank.parasoft.testcases;
 
-import com.parabank.parasoft.pages.HomePage;
 import com.parabank.parasoft.pages.LoginPage;
 import com.parabank.parasoft.pages.OpenNewAccountPage;
-import com.parabank.parasoft.util.General;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

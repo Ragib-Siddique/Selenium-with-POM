@@ -1,4 +1,4 @@
-package com.parabank.parasoft.tsetcases;
+package com.parabank.parasoft.testcases;
 
 import com.parabank.parasoft.pages.BasePage;
 import com.parabank.parasoft.pages.Page;
