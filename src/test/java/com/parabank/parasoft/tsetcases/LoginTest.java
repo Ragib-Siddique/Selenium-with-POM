@@ -1,6 +1,6 @@
 package com.parabank.parasoft.tsetcases;
 
-import com.parabank.parasoft.pages.AccountOverviewPage;
+import com.parabank.parasoft.pages.HomePage;
 import com.parabank.parasoft.pages.LoginPage;
 import com.parabank.parasoft.util.General;
 import org.testng.Assert;
@@ -56,7 +56,7 @@ public class LoginTest extends BaseTest {
 
         LoginPage loginPage=page.getInstance(LoginPage.class);
 
-        AccountOverviewPage overviewPage=loginPage
+        HomePage overviewPage=loginPage
                 .fillUsername(getUsername())
                 .fillUPassword(getPassword())
                 .clickLoginBtn();

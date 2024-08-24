@@ -21,9 +21,9 @@ public class LoginPage extends BasePage{
     }
 
 
-    public AccountOverviewPage clickLoginBtn(){
+    public HomePage clickLoginBtn(){
         getWebElement(By.cssSelector("input[value='Log In']")).click();
-        return getInstance(AccountOverviewPage.class);
+        return getInstance(HomePage.class);
 
     }
 
@@ -47,4 +47,12 @@ public class LoginPage extends BasePage{
     public boolean hasError(){
         return getWebElements(By.className("error")).size() > 0;
     }
+
+    public HomePage doLogin(String username, String password){
+
+        return fillUsername(username)
+                .fillUPassword(password)
+                .clickLoginBtn();
+    }
+
 }
