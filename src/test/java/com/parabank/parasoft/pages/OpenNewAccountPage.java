@@ -18,7 +18,7 @@ public class OpenNewAccountPage extends BasePage {
 
 
     public OpenNewAccountPage selectAccountNumber(int index){
-        new Select(getWebElement(By.id("fromAccountId"))).selectByIndex();
+        new Select(getWebElement(By.id("fromAccountId"))).selectByIndex(index);
 
         return this;
     }
