@@ -79,7 +79,7 @@ public class RegisterPage extends BasePage {
     return getWebElements(By.className("error")).size() >= errorNumber;
     }
 
-    public HomePage doRegistration(){
+    public HomePage doLoginViaRegistration(){
         String username= LoremIpsum.getInstance().getName();
         return getInstance(LoginPage.class)
                 .clickRegistrationLink()

@@ -11,7 +11,7 @@ public class OpenNewAccountTest extends BaseTest {
     @Test(priority = 1)
     public void openAccountShouldSucceed() {
         OpenNewAccountPage newAccountPage = page.getInstance(LoginPage.class)
-                .doLogin(getUsername(), getPassword())
+                .d
                 .clickOpenAccountLink()
                 .selectAccountType(1)
                 .selectAccountNumber(0)
