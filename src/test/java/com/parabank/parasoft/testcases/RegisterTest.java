@@ -11,11 +11,11 @@ public class RegisterTest extends BaseTest{
     @Test
 
 public void registrationShouldFailWithoutData(){
-        LoginPage loginPage=page.getInstance(LoginPage.class);
+        LoginPage loginPage = page.getInstance(LoginPage.class);
 
-        RegisterPage registerPage=loginPage
+        RegisterPage registerPage = loginPage
                 .clickRegistrationLink()
-                        .clickRegisterLink();
+                .clickRegisterLink();
 
         Assert.assertTrue(registerPage.hasFirstNameRequiredFieldError());
         Assert.assertTrue(registerPage.hasError(10));

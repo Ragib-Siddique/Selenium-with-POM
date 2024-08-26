@@ -75,7 +75,7 @@ public class RegisterPage extends BasePage {
     }
 
     public boolean hasError(int errorNumber){
-    return getWebElements(By.className("error")).size()>=errorNumber;
+    return getWebElements(By.className("error")).size() >= errorNumber;
     }
 
 }
