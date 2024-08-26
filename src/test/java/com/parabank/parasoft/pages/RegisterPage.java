@@ -8,41 +8,41 @@ public class RegisterPage extends BasePage {
         super(driver);
     }
      public RegisterPage fillFirstName (String Firstname){
-        getWebElement(By.xpath("//input[@id='customer.firstName']")).sendKeys();
+        getWebElement(By.id("customer.firstName")).sendKeys();
         return this;
      }
     public RegisterPage fillLastName (String Lastname){
-        getWebElement(By.xpath("//input[@id='customer.lastName']")).sendKeys();
+        getWebElement(By.id("customer.lastName")).sendKeys();
         return this;
     }
     public RegisterPage fillAddress (String Address){
-        getWebElement(By.xpath("//tbody/tr[3]/td[2]")).sendKeys();
+        getWebElement(By.id("customer.address.street")).sendKeys();
         return this;
     }
 
     public RegisterPage fillCity (String City){
-        getWebElement(By.xpath("//input[@id='customer.address.city']")).sendKeys();
+        getWebElement(By.id("customer.address.city")).sendKeys();
         return this;
     }
 
     public RegisterPage fillState (String State){
-        getWebElement(By.xpath("//input[@id='customer.address.state']")).sendKeys();
+        getWebElement(By.id("customer.address.state")).sendKeys();
         return this;
     }
-    public RegisterPage fillZipCode (int ZipCode){
-        getWebElement(By.xpath("//input[@id='customer.address.zipCode']")).sendKeys();
+    public RegisterPage fillZipCode (String ZipCode){
+        getWebElement(By.id("customer.address.zipCode")).sendKeys();
         return this;
     }
-    public RegisterPage fillPhone (int Phone){
-        getWebElement(By.xpath("//input[@id='customer.phoneNumber']")).sendKeys();
+    public RegisterPage fillPhone (String Phone){
+        getWebElement(By.id("customer.phoneNumber")).sendKeys();
         return this;
     }
-    public RegisterPage fillSSN (int SSN){
-        getWebElement(By.xpath("//input[@id='customer.ssn']")).sendKeys();
+    public RegisterPage fillSsn (String Ssn){
+        getWebElement(By.id("customer.ssn")).sendKeys();
         return this;
     }
     public RegisterPage fillUserName (String UserName){
-        getWebElement(By.xpath("//b[normalize-space()='Username:']")).sendKeys();
+        getWebElement(By.id("customer.username")).sendKeys();
         return this;
     }
     public RegisterPage fillPassword (String Password){
