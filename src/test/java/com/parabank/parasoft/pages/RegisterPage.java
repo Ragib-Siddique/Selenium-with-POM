@@ -79,22 +79,6 @@ public class RegisterPage extends BasePage {
     return getWebElements(By.className("error")).size() >= errorNumber;
     }
 
-    public HomePage doLoginViaRegistration(){
-        String username= LoremIpsum.getInstance().getName();
-        return getInstance(LoginPage.class)
-                .clickRegistrationLink()
-                .fillFirstName(LoremIpsum.getInstance().getFirstName())
-                .fillLastName(LoremIpsum.getInstance().getLastName())
-                .fillAddress(LoremIpsum.getInstance().getTitle(3))
-                .fillCity(LoremIpsum.getInstance().getCity())
-                .fillState(LoremIpsum.getInstance().getCity())
-                .fillZipCode(LoremIpsum.getInstance().getZipCode())
-                .fillPhone(LoremIpsum.getInstance().getPhone())
-                .fillSsn("321-45-3445")
-                .fillUserName(username)
-                .fillPassword(username)
-                .fillConfirmPassword(username)
-                .clickRegisterBtn();
-    }
+
 
 }
