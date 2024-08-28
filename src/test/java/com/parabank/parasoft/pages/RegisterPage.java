@@ -55,17 +55,17 @@ public class RegisterPage extends BasePage {
         return this;
     }
 
-    public RegisterPage clickRegisterLink (){
-        getWebElement(By.xpath("//a[normalize-space()='Register']")).click();
-        return this;
-    }
+
 
 
     public HomePage clickRegisterBtn (){
         getWebElement(By.cssSelector("input[value='Register']")).click();
         return getInstance(HomePage.class);
     }
-
+    public RegisterPage clickRegisterLink (){
+        getWebElement(By.xpath("a[href='register.htm']")).click();
+        return this;
+    }
 
 
 
