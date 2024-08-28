@@ -61,7 +61,7 @@ public class LoginTest extends BaseTest {
                 .fillUPassword(getPassword())
                 .clickLoginBtn();
 
-        Assert.assertTrue(overviewPage.hasLogoutLink());
+                            Assert.assertTrue(overviewPage.hasLogoutLink());
 
     }
 
