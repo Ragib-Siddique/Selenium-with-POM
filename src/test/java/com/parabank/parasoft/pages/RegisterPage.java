@@ -54,13 +54,14 @@ public class RegisterPage extends BasePage {
         getWebElement(By.id("repeatedPassword")).sendKeys();
         return this;
     }
+
     public HomePage clickRegisterBtn (){
         getWebElement(By.cssSelector("input[value='Register']")).click();
         return getInstance(HomePage.class);
     }
 
     public RegisterPage clickRegisterLink (){
-        getWebElement(By.cssSelector("a[href='register.htm']")).click();
+        getWebElement(By.xpath("//a[normalize-space()='Register']")).click();
         return this;
     }
 
