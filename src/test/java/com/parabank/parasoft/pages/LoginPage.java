@@ -39,7 +39,7 @@ public class LoginPage extends BasePage {
 
 
     public RegisterPage clickRegistrationLink() {
-        getWebElement(By.cssSelector("a[href='register.htm']")).click();
+        getWebElement(By.xpath("//a[normalize-space()='Register']")).click();
         return getInstance(RegisterPage.class);
     }
 
